@@ -273,3 +273,35 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+    margin: 0;
+    /* Remove margin to use full width */
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    /* Smaller title */
+  }
+
+  .waitlist-form {
+    padding: 1.5rem;
+    /* Reduced padding */
+    border-radius: 1.5rem;
+  }
+
+  .blob {
+    opacity: 0.4;
+    /* Slightly less intrusive blobs */
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 16px;
+    /* Prevents iOS zoom on focus */
+  }
+}
